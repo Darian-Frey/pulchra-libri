@@ -1,0 +1,325 @@
+[
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340155",
+            "name": "The Hobbit.",
+            "aurthor": "TOLKIEN, J. R. R.",
+            "publisher": "London: George Allen & Unwin Ltd for The Folio Society, 1976",
+            "notes": "First deluxe edition, first impression, of Tolkien's well-loved classic, in the special issue for the Folio Society, using the deluxe edition sheets bound in a brown quarter sheep binding with slipcase. It was first published in 1937.",
+            "description": "Octavo. Original brown quarter sheep, brown cloth sides, spine lettered in gilt, gilt labyrinth pattern to spine and front cover, map endpapers, top edge brown. Housed in the original brown card slipcase.",
+            "illustrations": "Frontispiece and 12 plates in colour.",
+            "condition": "A fine copy, sharp and bright.",
+            "price": 375.00,
+            "category": 4,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/thehobbit/150879.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340156",
+            "name": "The Lord of the Rings.The Fellowship of the Ring; The Two Towers; The Return of the King.",
+            "aurthor": "TOLKIEN, J. R. R.",
+            "publisher": "London: George Allen & Unwin Ltd, 1966",
+            "notes": "Second edition, first impression. This was the final and definitive text of Lord of the Rings, revised and corrected by Tolkien from the first edition, published 1954-55.",
+            "description": "3 volumes, octavo. Original red cloth, spines lettered in gilt, top edges red, cream endpapers. With dust jackets.",
+            "illustrations": "Folding map in red and black at rear of each volume",
+            "condition": "Slight lean to The Fellowship, with only one bump to foot of spine of Two Towers, a little rubbing to extremities and pale foxing to all edges, short closed tear to map of Fellowship, not affecting the map, small loss to lower corner of front free endpaper of Two Towers.",
+            "price": 750.00,
+            "category": 4,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/thelordoftherings/149849.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340157",
+            "name": "The Hobbit or There and Back Again.",
+            "aurthor": "TOLKIEN, J. R. R.",
+            "publisher": "London: George Allen & Unwin, 1976",
+            "notes": "First deluxe edition, first impression, of Tolkien's well-loved classic, first published in 1937.",
+            "description": "Octavo. Publisher's deluxe binding of black cloth, titles to spine in gilt, Smaug illustrative vignette to front cover in gilt, silver and red, marbled endpapers, blue speckled edges. Housed in a custom black leather slipcase, gilt Smaug device to front panel, Tolkien monogram on rear panel.",
+            "illustrations": "Colour frontispiece, titles printed in red and black, 12 colour plates, 2 double page colour maps at front and rear of text, all by Tolkien.",
+            "condition": "Trivial rubbing at peripheries; a near-fine copy.",
+            "price": 875.00,
+            "category": 4,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/thehobbitthereandbackagain/149226.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340158",
+            "name": "Red Mars.",
+            "aurthor": "ROBINSON, Kim Stanley.",
+            "publisher": "London: Harper Collins, 1992",
+            "notes": "First edition, signed and dated by the author in the year of publication. Kim Stanley Robinson's Mars trilogy is already a science-fiction classic, with this first novel praised by Arthur C. Clarke as 'a staggering book... The best novel on the colonization of Mars that has ever been written'.",
+            "description": "Octavo. Original red boards, titles gilt to spine. With the illustrated dust jacket.",
+            "illustrations": "None.",
+            "condition": "Signed by the author on the title page. A fine copy.",
+            "price": 500.00,
+            "category": 3,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/redmars/139542comp.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340159",
+            "name": "The Lost World.",
+            "aurthor": "DOYLE, Sir Arthur Conan.",
+            "publisher": "London: Hodder and Stoughton, [1912]",
+            "notes": "First edition in book form, first impression, of Conan Doyle's classic prehistoric adventure novel, following its serialization in the Strand Magazine earlier that year.",
+            "description": "Octavo. Original blue cloth, spine lettered in gilt, titles and pictorial design to front cover in white and gilt.",
+            "illustrations": "Frontispiece and 7 plates, diagrams within the text.",
+            "condition": "Spine lightly creased with slight lean, slight rubbing to spine and rear cover, edges and contents foxed, yet still an excellent copy.",
+            "price": 1250.00,
+            "category": 3,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/thelostworld/138994.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340160",
+            "name": "Ubik.",
+            "aurthor": "DICK, Philip K.",
+            "publisher": "Garden City, NY: Doubleday & Company, Inc., 1969",
+            "notes": "First edition, first printing.",
+            "description": "Octavo. Original grey cloth, titles to spine in white. With dust jacket.",
+            "illustrations": "None.",
+            "condition": "Spine very slightly rolled. An excellent copy in the lightly rubbed jacket that is faintly toned along the edges.",
+            "price": 2500.00,
+            "category": 3,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/ubik/79085.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340161",
+            "name": "The Sheep Look Up.",
+            "aurthor": "BRUNNER, John.",
+            "publisher": "New York: Harper & Row, Publishers, 1972",
+            "notes": "First edition, first printing, signed by Brunner on the title page. This classic novel of apocalyptic climate fiction was the author's follow up to The Stand on Zanzibar, an award winning novel tackling human overpopulation.",
+            "description": "Octavo. Original black cloth backed boards, green paper to sides, titles to spine silver. With dust jacket.",
+            "illustrations": "None.",
+            "condition": "An excellent copy, the jacket only lightly creased at edges in some places.",
+            "price": 600.00,
+            "category": 1,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/thesheeplookup/141001.jpg"
+        }
+    },
+    {
+        "pk":12,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340162",
+            "name": "The King in Yellow.",
+            "aurthor": "CHAMBERS, Robert W.",
+            "publisher": "Chicago & New York: F. Tennyson Neely, 1895",
+            "notes": "First edition of this collection of short stories, the second book from American author Robert W. Chambers (1865-1933). Bleiler called The King in Yellow 'a mind destroying book' (Bleiler) and 'one of the most important works of supernatural horror between Edgar Allan Poe and modern horror fiction' (Bleiler, Supernatural Fiction Writers, p. 739).",
+            "description": "Octavo. Original green cloth, titles to spine and front board brown, lizard design to front board brown, top edge gilt, others untrimmed.",
+            "illustrations": "One leaf of publisher's advertisements at the rear.",
+            "condition": "Bookplate of Richard M. Moore to front pastedown. Spine somewhat darkened, some mild dust-soiling and a few minor marks to cloth, light rubbing to extremities, superficial cracking to endpapers inside front hinge but nonetheless sound.",
+            "price": 1750.00,
+            "category": 4,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/thekinginyellow/139919.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340163",
+            "name": "The Shunned House.With a preface by Frank Belknap Long, Jr.",
+            "aurthor": "LOVECRAFT, H. P.",
+            "publisher": "Athol, Mass. : W. Paul Cook, The Recluse Press, 1928",
+            "notes": "First edition, first printing, of Lovecraft's first book, one of 100 bound in black cloth and distributed by Arkham House in 1961, from an edition limited to 300 copies only. 'One of a handful of copies' (Currey) complete with the uncancelled original 1928 Cook copyright statement, the Arkham House copyright label pasted to the verso of the title, and the 'Canterbury' watermark.",
+            "description": "Octavo. Black cloth, titles in gilt to spine. Housed in an early and attractively matching slipcase.",
+            "illustrations": "None.",
+            "condition": "Light rubbing to corners, two small marks to front board, gilt lettering to spine partly erased, faint uniform toning to contents, as often, a small crease to bottom of p. 7; a near-fine copy.",
+            "price": 6750.00,
+            "category": 2,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/theshunnedhouse/136540.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340164",
+            "name": "['Dagon', in] The Vagrant.Number Eleven.",
+            "aurthor": "LOVECRAFT, H. P.",
+            "publisher": "[Athol, MA]: W. Paul Cook, November 1919",
+            "notes": "First appearance in print of Dagon, the first of Lovecraft's tales to introduce a Cthulhu Mythos element by way of the sea deity Dagon. The Vagrant was an amateur press magazine specialising in the supernatural produced by William Paul Cook between 1915 and 1927, with a total of 15 issues.",
+            "description": "Octavo. Original brown paper wrappers, staple bound, titles in black to front cover. Housed in a custom card chemise and red morocco-backed solander box.",
+            "illustrations": "None.",
+            "condition": "Short closed tear to head of spine, contents toned and slightly brittle; else a near-fine, remarkably bright copy of this fragile publication.",
+            "price": 7500.00,
+            "category": 2,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/thevagrant/131926.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340165",
+            "name": "Tales From Ovid.Twenty-four Passages from the Metamorphoses.",
+            "aurthor": "HUGHES, Ted.",
+            "publisher": "London: Faber and Faber, 1998",
+            "notes": "First edition, signed limited issue, signed by the author; this is the binder's copy, marked '0/5'. The signed limited edition consisted of 310 copies, of which 10 were reserved for the author. This work was the winner of the 1997 Whitbread Book of the Year award.",
+            "description": "Octavo. Original grey cloth-backed green boards, orange label to spine printed in black, orange endpapers. Housed in the original slipcase.",
+            "illustrations": "None.",
+            "condition": "Boards a touch rubbed, else a fine copy, bright and square, in the original slipcase.",
+            "price": 750.00,
+            "category": 4,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/talefromovid/138031.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340166",
+            "name": "The Day of the Triffids.",
+            "aurthor": "WYNDHAM, John.",
+            "publisher": "London: Michael Joseph, 1951",
+            "notes": "First edition, first impression, of Wyndham's science fiction classic.",
+            "description": "Octavo. Original green cloth, titles to spine in silver. With the illustrated dust jacket. Housed in a green cloth solander box.",
+            "illustrations": "None.",
+            "condition": "Spine ends and edges of boards slightly rubbed, very light circular stain to rear board. Otherwise an excellent copy in a slightly rubbed dust jacket with a few nicks and a small tape repair to verso of head of spine.",
+            "price": 2500.00,
+            "category": 2,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/thedayofthetriffids/90298.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340167",
+            "name": "The Earthomotor and Other Stories.",
+            "aurthor": "LINTON, Charles Ellsworth.",
+            "publisher": "Salem, OR : Statesman Publishing Co., 1920",
+            "notes": "First edition, first printing, inscribed in pencil by the author on the front free endpaper, 'To the Nat Hosp. Assoc. with best wishes of the author Dr. C. E. Linton'. ",
+            "description": "Octavo. Original grey cloth, title to spine in black, titles and illustration to front board in black. With dust jacket.",
+            "illustrations": "Photographic frontispiece portrait of Linton and 7 illustrations in the text, 6 of which are full-page.",
+            "condition": "A couple of small marks to spine joints, minor rubbing to spine ends, tiny spot of foxing to spine, else cloth notably bright, contents fresh, a very good copy indeed in the jacket with a little soiling, slight nicks to spine ends and tips, trace of tape repair to verso, sometime removed.",
+            "price": 375.00,
+            "category": 3,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/theearthmotor/139395.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340168",
+            "name": "A Wrinkle in Time, A Wind in the Door, A Swiftly Tilting Planet, Many Waters, An Acceptable Time.",
+            "aurthor": "L'ENGLE, Madeleine.",
+            "publisher": "Ariel Books, Farrar, Straus and Cudahy,/Farrar, Straus & Giroux, 1962, 1973, 1978, 1986, 1989",
+            "notes": "First editions, first impression, inscribed and signed set, of the complete Time Quintet. A Wrinkle in Time, with a signed slip laid in, in the second state jacket (Newbery Prize sticker residue to front panel), together with signed or inscribed first impressions of the four sequential Time Quintet titles (an assembled set, with inscriptions to different recipients).",
+            "description": "Five works, octavo. Original cloth, with dust jackets.",
+            "illustrations": "None.",
+            "condition": "Wrinkle in very good condition, with rubbing to extremities and a faded spine panel, otherwise internally fresh, with the jacket chipped at the ends and corners with two closed tears to bottom of front panel and a few minor marks.",
+            "price": 8750.00,
+            "category": 3,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/awrinkleintime/111206.jpg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340169",
+            "name": "Neuromancer.",
+            "aurthor": "GIBSON, William.",
+            "publisher": "London: Victor Gollancz, 1984",
+            "notes": "First UK edition, first printing. Following the publication of the US Ace paperback this is the first hardback edition and first UK edition. Winner of the 'triple crown': the Nebula, Hugo and Philip K Dick Awards, the most famous and enduring 'cyperpunk novel'. A veritable landmark in modern science fiction writing, the cultural impact of which is still widely felt.",
+            "description": "Octavo. Publisher's blue boards, titles in gilt to spine. With dust jacket.",
+            "illustrations": "None.",
+            "condition": "Spine ends a trifle bumped. A fine copy in the near-fine dust jacket, minor creasing to spine head and along top edge of rear panel.",
+            "price": 2000.00,
+            "category": 3,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/neuromancer/135873.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340170",
+            "name": "Revolt in 2100.",
+            "aurthor": "HEINLEIN, Robert A.",
+            "publisher": "Chicago: Shasta Publications, 1953",
+            "notes": "First edition, first printing, signed issue. One of an undetermined number of copies issued to subscribers, signed by the author on the blank page tipped-in between the front free endpaper and the half-title. This collection of three short stories, published as part of Heinlein's Future History series, describes the projected future of the human race up to the 23rd century.",
+            "description": "Octavo. Original black cloth-backed red boards, titles to spine in gilt, printed endpapers. With dust jacket.",
+            "illustrations": "None.",
+            "condition": "Partially removed bookseller's ticket to foot of front pastedown. Spine gently rolled, a touch of shelf wear, light foxing to text block edges and endpapers; a very good copy in the jacket with browned spine, slight creasing and nicks to extremities.",
+            "price": 1500.00,
+            "category": 3,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/revoltin2100/130166.jpg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "pp5001340171",
+            "name": "Beyond This Horizon.",
+            "aurthor": "HEINLEIN, Robert A.",
+            "publisher": "Reading, PA: Fantasy Press, 1948",
+            "notes": "First edition, first printing. One of 500 numbered and signed copies from a limited edition of 3000 copies. This copy inscribed on the limitation leaf 'For Robert V. Jones All good wishes! Robert A. Heinlein'.",
+            "description": "Octavo. Original red cloth, titles to spine gilt. With dust jacket.",
+            "illustrations": "Frontispiece and 3 plates.",
+            "condition": "Spine faded. An excellent copy in the rubbed and chipped jacket with faded spine panel.",
+            "price": 750.00,
+            "category": 3,
+            "rating": 5.0,
+            "image_url": "",
+            "image": "media/bookcovers/beyondthishorizon/66688.jpg"
+        }
+    }
+]

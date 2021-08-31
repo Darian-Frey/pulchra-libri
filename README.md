@@ -16,6 +16,8 @@ Pulchra Libri
 
 ## Imagery
 
+[Unsplash](https://unsplash.com/)
+
 ## Wireframes
 
 # Technologies Used
@@ -46,6 +48,8 @@ Languages used for this site:
    - MongoDB used to store data in collections
 7. [Unsplash:](https://unsplash.com/)
    - Unsplash for the free images.
+8. [Bootstarp:](https://getbootstrap.com/)
+   - Frameworks for building clean responcive sites.
 
    # Features
 
