@@ -15,8 +15,12 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center py-2">
-            <h2>Products</h2>
-            <div class="dropdown">
+            <h2>Books</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <div class="dropdown pb-1">
                 <button class="btn btn-dark btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     Sort by
@@ -27,6 +31,15 @@
                     <li><a class="dropdown-item" href="#">Category</a></li>
                 </ul>
             </div>
+            <div class="pb-1">
+                <a class="btn btn-dark btn-sm" href="{% url 'products' %}?category=fiction" role="button">Fiction</a>
+    
+                <a class="btn btn-dark btn-sm" href="{% url 'products' %}?category=horror" role="button">Horror</a>
+    
+                <a class="btn btn-dark btn-sm" href="{% url 'products' %}?category=science_fiction" role="button">Science Fiction</a>
+
+                <a class="btn btn-dark btn-sm" href="{% url 'products' %}?category=mystery" role="button">Mystery</a>
+                </div>
         </div>
     </div>
     <div class="row">
@@ -48,7 +61,9 @@
                         {% endif %}
                             <div class="card-body">
                                 <h5 class="card-title">{{ product.name }}</h5>
-                                <p class="card-text">${{ product.price }}</p>
+                                <p class="card-text">{{ product.aurthor }}</p>
+                                <p><i class="fas fa-tags"></i>{{ product.category.friendly_name }}</p>
+                                <p class="card-text">£{{ product.price }}</p>
                                 {% if product.rating != 0 %}
                                 <p class="card-text"><i class="fas fa-star"></i> {{product.rating}}/5</p>
                                 {% else %}
