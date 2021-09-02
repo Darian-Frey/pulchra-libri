@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2 card">
+            <div class="my-5">
+                {% if product.image %}
+                <a href="{{ product.image.url }}" target="_blank">
+                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                </a>
+                {% endif %}
+                <a class="small-tag link-secondary text-decoration-none" href="{% url 'products' %}?category={{ product.category.name }}">
+                    <i class="fas fa-tags"></i>{{ product.category.friendly_name }}
+                </a>
+                {% if product.rating != 0 %}
+                    <p class="card-text"> {{product.rating}}/5</p>
+                {% else %}
+                    <p class="card-text">No ratings yet</p>
+                {% endif %}
+                <p>£: {{ product.price }}</p>
+            </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4 card">
+            <h5><strong>{{ product.name }}</strong></h5>
+            <p><strong>Author:</strong> {{ product.aurthor }}</p>
+            <p><strong>Publisher:</strong> {{ product.publisher }}</p>
+            <p><strong>Notes:</strong> {{ product.notes }}</p>
+            <p><strong>Description:</strong> {{ product.description }}</p>
+            <p><strong>Illustrations:</strong> {{ product.illustrations }}</p>
+            <p><strong>Condition:</strong> {{ product.condition }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %} 
