@@ -26,9 +26,9 @@
                     Sort by
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Price</a></li>
-                    <li><a class="dropdown-item" href="#">Rating</a></li>
-                    <li><a class="dropdown-item" href="#">Category</a></li>
+                    <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">Price</a></li>
+                    <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=desc">Rating</a></li>
+                    <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">Category</a></li>
                 </ul>
             </div>
             <div class="pb-1">
