@@ -62,7 +62,10 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ product.name }}</h5>
                                 <p class="card-text">{{ product.aurthor }}</p>
-                                <p><i class="fas fa-tags"></i>{{ product.category.friendly_name }}</p>
+                                {% if product.category %}
+                                    <a class="card-text" href="{% url 'products' %}?category={{ product.category.name }}">
+                                    <i class="fas fa-tags"></i>{{ product.category.friendly_name }}</a>
+                                {% endif %}
                                 <p class="card-text">£{{ product.price }}</p>
                                 {% if product.rating != 0 %}
                                 <p class="card-text"><i class="fas fa-star"></i> {{product.rating}}/5</p>

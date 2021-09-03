@@ -25,9 +25,11 @@
                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
-                <a class="small-tag link-secondary text-decoration-none" href="{% url 'products' %}?category={{ product.category.name }}">
-                    <i class="fas fa-tags"></i>{{ product.category.friendly_name }}
-                </a>
+                {% if product.category %}
+                    <a class="card-text" href="{% url 'products' %}?category={{ product.category.name }}">
+                        <i class="fas fa-tag"></i>{{ product.category.friendly_name }}
+                    </a>
+                {% endif %}
                 {% if product.rating != 0 %}
                     <p class="card-text"><i class="fas fa-star"></i> {{product.rating}}/5</p>
                 {% else %}
