@@ -16,6 +16,11 @@
     <div class="row">
         <div class="col text-center py-2">
             <h2>Books</h2>
+            {% for c in current_categories %}
+                <a class="category-badge" href="{% url 'products' %}?category={{ c.name }}">
+                    <span class="p-2 mt-2 badge badge-white text-black rounded-2 border border-dark">{{ c.friendly_name }}</span>
+                </a>
+            {% endfor %}
         </div>
     </div>
     <div class="row">
@@ -26,7 +31,8 @@
                     Sort by category
                 </button>
                 <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                    <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                    <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price Ascending</a>
+                    <a href="{% url 'products' %}?sort=price&direction=desc" class="dropdown-item">By Price Descending</a>
                     <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                     <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                     <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
@@ -105,4 +111,4 @@
         </div>
     </div>
 </div>
-{% endblock %} 
+{% endblock %}
