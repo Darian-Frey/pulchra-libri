@@ -23,7 +23,7 @@
             <div class="dropdown pb-1">
                 <button class="btn btn-dark btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    Sort by
+                    Sort by category
                 </button>
                 <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                     <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
@@ -32,15 +32,19 @@
                     <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                 </div>
             </div>
-            <div class="pb-1">
-                <a class="btn btn-dark btn-sm" href="{% url 'products' %}?category=fiction" role="button">Fiction</a>
-    
-                <a class="btn btn-dark btn-sm" href="{% url 'products' %}?category=horror" role="button">Horror</a>
-    
-                <a class="btn btn-dark btn-sm" href="{% url 'products' %}?category=science_fiction" role="button">Science Fiction</a>
-
-                <a class="btn btn-dark btn-sm" href="{% url 'products' %}?category=mystery" role="button">Mystery</a>
+            <div class="dropdown pb-1">
+                <button class="btn btn-dark btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Sort by genre
+                </button>
+                <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                    <a href="{% url 'products' %}?category=fiction" class="dropdown-item">Fiction</a>
+                    <a href="{% url 'products' %}?category=horror" class="dropdown-item">Horror</a>
+                    <a href="{% url 'products' %}?category=science_fiction" class="dropdown-item">Science Fiction</a>
+                    <a href="{% url 'products' %}?category=mystery" class="dropdown-item">Mystery</a>
+                    <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
                 </div>
+            </div>
         </div>
     </div>
     <div class="row">
