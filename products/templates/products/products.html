@@ -74,7 +74,7 @@
                                 <h5 class="card-title">{{ product.name }}</h5>
                                 <p class="card-text">{{ product.aurthor }}</p>
                                 {% if product.category %}
-                                    <a class="card-text" href="{% url 'products' %}?category={{ product.category.name }}">
+                                    <a class="card-text link-secondary" href="{% url 'products' %}?category={{ product.category.name }}">
                                     <i class="fas fa-tags"></i>{{ product.category.friendly_name }}</a>
                                 {% endif %}
                                 <p class="card-text">£{{ product.price }}</p>
