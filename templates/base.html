@@ -34,7 +34,7 @@
 
 <body>
   <header class="container-fluid">
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg row">
+    <nav class="navbar navbar-dark bg-cust navbar-expand-lg row">
       <div class="container-fluid">
           <a class="navbar-brand" href="{% url 'home' %}"><i class="fas fa-book"></i> <span class="fw-bold">Pulchra</span> Libri</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -101,16 +101,28 @@
   {% endblock %}
 
   <footer class="container-fluid">
-    <div class="row fixed-bottom">
-      <div class="col-12 bg-dark">
-        <div class="footer-links">
-          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-    </div>
+			<div class="row">
+				<div class="col">
+					<ul class="list-inline social-links">
+						<li class="list-inline-item">
+							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-facebook"></i> <span class="sr-only">Facebook</span></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-twitter"></i> <span class="sr-only">Twitter</span></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-linkedin"></i> <span class="sr-only">LinkedIn</span></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-instagram"></i> <span class="sr-only">Instagram</span></a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-youtube"></i> <span class="sr-only">YouTube</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+    
   </footer>
   {% block corejs %}
   <script src="https://kit.fontawesome.com/807aa8c83d.js" crossorigin="anonymous"></script>

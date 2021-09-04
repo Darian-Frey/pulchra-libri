@@ -22,8 +22,11 @@ body {
     background: url('/media/background.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
     font-family: 'Lato';
+}
+
+.bg-cust {
+    background-color: #112229;
 }
 
 /* from Bulma */
@@ -105,19 +108,29 @@ body {
 footer {
     padding-top: 100px;
     padding-bottom: 20px;
-    color: hsl(0, 0%, 100%);
     text-align: center;
   }
-  
-  .footer-links a i {
-    color: hsl(0, 0%, 69%);
-    text-decoration: none;
-    background-color: transparent;
-    font-size: 20px;
-    padding: 0 10px;
+
+
+.social-links li a i {
+    margin-top: 15px;
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 25%;
+    font-size: 13px;
+    line-height: 7px;
     text-align: center;
-  }
-  
-  .footer-links a i:hover {
-      color: hsl(210, 100%, 50%);
-  } 
+    color: white;
+    background: #112229;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    border-radius: 50%;
+    color: #112229;
+    background: #CD4134;
+}
