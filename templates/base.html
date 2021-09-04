@@ -53,7 +53,7 @@
                       <a class="nav-link " aria-current="page" href="">My Profile</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="">Bag | {% if grand_total %}
+                      <a class="nav-link" href="{% url 'view_bag' %}">Bag | {% if grand_total %}
                           £{{ grand_total|floatformat:2 }}
                         {% else %}
                           £0.00
@@ -82,7 +82,7 @@
   </nav>
   <div id="delivery-banner" class="row bg-warning text-center">
     <div class="col fw-bold ">
-      <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>
+      <h4 class="logo-font my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>
     </div>
   </div>
   </header>
