@@ -17,16 +17,13 @@ class Category(models.Model):
 
 
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
-    sold = models.BooleanField(default=False, null=True, blank=True)
     aurthor = models.CharField(max_length=254)
-    publisher = models.CharField(max_length=254)
-    notes = models.TextField()
-    description = models.TextField()
+    overview = models.TextField()
+    noteone = models.TextField()
+    details = models.TextField()
     illustrations = models.TextField()
-    condition = models.TextField()
     price = models.DecimalField(max_digits=8, decimal_places=2)
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)

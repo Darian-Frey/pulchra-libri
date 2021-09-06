@@ -1,325 +1,272 @@
 [
     {
-        "pk": 5,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340155",
-            "name": "The Hobbit.",
-            "aurthor": "TOLKIEN, J. R. R.",
-            "publisher": "London: George Allen & Unwin Ltd for The Folio Society, 1976",
-            "notes": "First deluxe edition, first impression, of Tolkien's well-loved classic, in the special issue for the Folio Society, using the deluxe edition sheets bound in a brown quarter sheep binding with slipcase. It was first published in 1937.",
-            "description": "Octavo. Original brown quarter sheep, brown cloth sides, spine lettered in gilt, gilt labyrinth pattern to spine and front cover, map endpapers, top edge brown. Housed in the original brown card slipcase.",
-            "illustrations": "Frontispiece and 12 plates in colour.",
-            "condition": "A fine copy, sharp and bright.",
-            "price": 375.00,
-            "category": 4,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "150879.jpg"
-        }
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340155",
+        "name": "The Foundation Trilogy.",
+        "aurthor": "Isaac Asimov.",
+        "overview": "Presented as an extraordinary Folio Society edition, Isaac Asimov’s science-fiction epic The Foundation Trilogy is introduced by Nobel Prize-winning economist Paul Krugman and illustrated by British artist Alex Wells.",
+        "noteone": "Why do empires rise and fall? How is society best run? Can history be predicted? Isaac Asimov explores these fascinating ideas in a multi-layered, ingenious story that is as gripping today as when it was first published in 1942.\nDrawing on contemporary politics, ancient history and mathematics, Isaac Asimov’s masterpiece explores the decline of the Galactic Empire; a civilisation that ruled nearly 25 million inhabited planets.\nThis unique three-volume edition is introduced by leading economist and Nobel Prize-winner Paul Krugman, while the twelve startling, futuristic artworks have been created by talented British illustrator Alex Wells, who also illustrated the sell-out Folio edition of I, Robot.",
+        "details": "Three volume set.\nThree-quarter-bound in buckram with printed paper front boards.\nSet in Garamond 792 pages in total.\nFrontispiece and 6 colour illustrations in each volume.\nBlocked slipcase 9inch × 5¾inch",
+        "illustrations": "Illustrated by Alex Wells.",
+        "price": 120,
+        "category": 3,
+        "rating": 5,
+        "image_url": "",
+        "image": "fdt_s_01.png"
+      }
     },
     {
-        "pk": 6,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340156",
-            "name": "The Lord of the Rings.The Fellowship of the Ring; The Two Towers; The Return of the King.",
-            "aurthor": "TOLKIEN, J. R. R.",
-            "publisher": "London: George Allen & Unwin Ltd, 1966",
-            "notes": "Second edition, first impression. This was the final and definitive text of Lord of the Rings, revised and corrected by Tolkien from the first edition, published 1954-55.",
-            "description": "3 volumes, octavo. Original red cloth, spines lettered in gilt, top edges red, cream endpapers. With dust jackets.",
-            "illustrations": "Folding map in red and black at rear of each volume",
-            "condition": "Slight lean to The Fellowship, with only one bump to foot of spine of Two Towers, a little rubbing to extremities and pale foxing to all edges, short closed tear to map of Fellowship, not affecting the map, small loss to lower corner of front free endpaper of Two Towers.",
-            "price": 750.00,
-            "category": 4,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "149849.jpg"
-        }
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340156",
+        "name": "Dune.",
+        "aurthor": "Frank Herbert.",
+        "overview": "This collector’s edition of Frank Herbert’s phenomenal tale of far-future desert warriors, fallible messiahs and interplanetary intrigue is illustrated by award-winning artist Sam Weber, and published to celebrate the 50th anniversary of the world’s best-selling science-fiction title.",
+        "noteone": "Arrakis, or Dune, is a planet of nothingness – its torched wastelands are home to a fierce nomadic people, and under the endless deserts stalk gargantuan sandworms the size of starships.\nIt is a place where water is sacred – ‘a substance more precious than all others’ – where to shed a tear is the most taboo of all sacrifices.\nAnd yet the planet is also humanity’s sole source of ‘spice’, the mysterious, addictive substance that underpins the workings of the galaxy-wide Padishah Empire. To control Arrakis is to control all. And it is across its vast expanses and in its arid caves that Frank Herbert’s epic adventure of political subterfuge and messianic deliverance is played out, a story that has become the best-selling science-fiction novel of all time, and is considered by many to be the genre’ greatest work.",
+        "details": "Bound in printed and blocked metallic buckram.\nSet in Dante with Helvetica Neue and Black Tulip display.\n576 pages.\nFrontispiece, 11 colour illustrations and 10 black & white chapter headings.\nEndpaper map by Martin Sanders.\nPrinted slipcase. 10inch x 6¾inch",
+        "illustrations": "Illustrated by Sam Weber.",
+        "price": 84.95,
+        "category": 3,
+        "rating": 5,
+        "image_url": "",
+        "image": "dfh_book.png"
+      }
     },
     {
-        "pk": 7,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340157",
-            "name": "The Hobbit or There and Back Again.",
-            "aurthor": "TOLKIEN, J. R. R.",
-            "publisher": "London: George Allen & Unwin, 1976",
-            "notes": "First deluxe edition, first impression, of Tolkien's well-loved classic, first published in 1937.",
-            "description": "Octavo. Publisher's deluxe binding of black cloth, titles to spine in gilt, Smaug illustrative vignette to front cover in gilt, silver and red, marbled endpapers, blue speckled edges. Housed in a custom black leather slipcase, gilt Smaug device to front panel, Tolkien monogram on rear panel.",
-            "illustrations": "Colour frontispiece, titles printed in red and black, 12 colour plates, 2 double page colour maps at front and rear of text, all by Tolkien.",
-            "condition": "Trivial rubbing at peripheries; a near-fine copy.",
-            "price": 875.00,
-            "category": 4,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "149226.jpg"
-        }
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340157",
+        "name": "The Book of the New Sun.",
+        "aurthor": "Gene Wolfe.",
+        "overview": "A stunning new two-volume Folio edition of Gene Wolfe’s acclaimed The Book of the New Sun, lavishly illustrated by Sam Weber and introduced by Neil Gaiman.",
+        "noteone": "A work that subverts, elevates and transcends its genre, Gene Wolfe’s fantasy epic tells the story of Severian, a young torturer who falls in love with one of his victims.\nHis punishment for allowing her a quick death, rather than a brutally slow demise, is exile to a distant city, but his arduous journey is fraught with danger, magic and questions about his destiny.This spectacular new collector’s edition of Wolfe’s multi-award-winning work features a powerful introduction by Neil Gaiman, which attests to the author’s literary prowess and enduring influence on the genre: ‘The more deeply you delve into The Book of the New Sun, the more it will repay the delving.' Celebrated artist Sam Weber was commissioned to illustrate the work – a labour of love that took the best part of a year to complete and four colour illustrations in each volume, two of which are double-page spreads, twelve original black-and-white illustrations and binding designs, for each of the four books that comprise this epic story, which form the front and back bindings of this two-volume edition.\nThe two-colour text includes decorative chapter initials based on an ancient script adapted by Weber to incorporate symbolic references to the story; a fitting tribute to a literary legacy that will stun generations to come.",
+        "details": "Bound in printed and blocked metallic buckram.\nSet in Dante with Helvetica Neue and Black Tulip display.\n576 pages.\nFrontispiece, 11 colour illustrations and 10 black & white chapter headings.\nEndpaper map by Martin Sanders.\nPrinted slipcase. 10inch x 6¾inch",
+        "illustrations": "Illustrated by Sam Weber.",
+        "price": 120,
+        "category": 3,
+        "rating": 5,
+        "image_url": "",
+        "image": "bkn_book.png"
+      }
     },
     {
-        "pk": 8,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340158",
-            "name": "Red Mars.",
-            "aurthor": "ROBINSON, Kim Stanley.",
-            "publisher": "London: Harper Collins, 1992",
-            "notes": "First edition, signed and dated by the author in the year of publication. Kim Stanley Robinson's Mars trilogy is already a science-fiction classic, with this first novel praised by Arthur C. Clarke as 'a staggering book... The best novel on the colonization of Mars that has ever been written'.",
-            "description": "Octavo. Original red boards, titles gilt to spine. With the illustrated dust jacket.",
-            "illustrations": "None.",
-            "condition": "Signed by the author on the title page. A fine copy.",
-            "price": 500.00,
-            "category": 3,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "139542.jpg"
-        }
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340158",
+        "name": "Ubik.",
+        "aurthor": "Philip K. Dick.",
+        "overview": "Philip K. Dick’s celebrated science-fiction thriller leaves readers guessing until the very last page. This spectacular Folio Society edition of Ubik features a new introduction by award-winning writer Kim Stanley Robinson.",
+        "noteone": "Joining The Man in the High Castle and the tête-bêche edition of Do Androids Dream of Electric Sheep? & A Scanner Darkly, Ubik is an unmissable Folio edition for fans of one of science fiction’s true masters.\nTime magazine described Philip K. Dick’s Ubik as ‘a deeply unsettling existential horror story’, a masterwork that built something new and altogether stranger out of the glittering foundations of science fiction. It is a novel that wrongfoots the reader at every turn, yet with a deft hand Dick delivers a taut thriller shot through with a gloriously dark sense of humour.\nInspired by Dick’s ability to break new ground with every story, Folio’ edition of Ubik pushes the boundaries of book design and science-fiction art. Featuring a series of bold hypnotic illustrations by award-winning independent art studio La Boca, this volume is presented in a special die-cut slipcase that combines with the vibrant binding to confuse the eye.",
+        "details": "Bound in blocked vinyl-coated paper.\nSet in Utopia with Helvetica Neua as display.\n224 pages.\nFrontispiece and 7 colour illustrations.\nPrinted endpapers.\nDie-cut slipcase with printed insides 9inch x 6¼inch",
+        "illustrations": "Illustrated by La Boca.",
+        "price": 49.95,
+        "category": 3,
+        "rating": 5,
+        "image_url": "",
+        "image": "ubk99.png"
+      }
     },
     {
-        "pk": 9,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340159",
-            "name": "The Lost World.",
-            "aurthor": "DOYLE, Sir Arthur Conan.",
-            "publisher": "London: Hodder and Stoughton, [1912]",
-            "notes": "First edition in book form, first impression, of Conan Doyle's classic prehistoric adventure novel, following its serialization in the Strand Magazine earlier that year.",
-            "description": "Octavo. Original blue cloth, spine lettered in gilt, titles and pictorial design to front cover in white and gilt.",
-            "illustrations": "Frontispiece and 7 plates, diagrams within the text.",
-            "condition": "Spine lightly creased with slight lean, slight rubbing to spine and rear cover, edges and contents foxed, yet still an excellent copy.",
-            "price": 1250.00,
-            "category": 3,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "138994.jpg"
-        }
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340159",
+        "name": "Do Androids Dream of Electric Sheep? & A Scanner Darkly.",
+        "aurthor": "Philip K. Dick.",
+        "overview": "Do Androids Dream of Electric Sheep? and A Scanner Darkly are two of Philip K. Dick’s most celebrated novels. In this celebrated Folio Society collector’s edition, these classics of dystopian science fiction are presented in a mind-bending format – two illustrators, two covers, one spectacular book.",
+        "noteone": "It is difficult to measure the impact of Philip K. Dick’s work.\nNot only did his stories and novels win awards and influence an entire generation of science-fiction writers, many of his works have been adapted into film and continue to inspire directors to this day. Alongside Ridley Scott’s genre-changing Blade Runner, inspired by Do Androids Dream of Electric Sheep?, the films Total Recall, Minority Report, A Scanner Darkly and the recent television series The Man in the High Castle all owe their existence to his imagination.\nFor this special Folio edition we have brought together two classic titles in an appropriately mind-bending format: read one, then turn the book upside down to enter the altered reality of the next.",
+        "details": "Quarter-bound in blocked cloth with paper sides.\nSet in Mentor with Neptune display.\n488 pages.\n12 full-page colour integrated illustrations and one double-page-spread colour illustration by both artists.\nPlain slipcase 10inch x 6¾inch",
+        "illustrations": "Illustrated by Andrew Archer and Chris Skinner.",
+        "price": 79.95,
+        "category": 3,
+        "rating": 5,
+        "image_url": "",
+        "image": "pkd_3.png"
+      }
     },
     {
-        "pk": 10,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340160",
-            "name": "Ubik.",
-            "aurthor": "DICK, Philip K.",
-            "publisher": "Garden City, NY: Doubleday & Company, Inc., 1969",
-            "notes": "First edition, first printing.",
-            "description": "Octavo. Original grey cloth, titles to spine in white. With dust jacket.",
-            "illustrations": "None.",
-            "condition": "Spine very slightly rolled. An excellent copy in the lightly rubbed jacket that is faintly toned along the edges.",
-            "price": 2500.00,
-            "category": 3,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "79085.jpg"
-        }
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340160",
+        "name": "Kafka on the Shore.",
+        "aurthor": "Haruki Murakami.",
+        "overview": "Newly introduced by Haruki Murakami, this outstanding Folio Society collector’s edition of Kafka on the Shore features the enigmatic and fantastical artwork of illustrator Daniel Liévano.",
+        "noteone": "Teetering on the edge of a dreamworld, Haruki Murakami’s novels operate in the space between reality and fantasy, sanity and insanity – and Kafka on the Shore is no exception.\nA master of magical realism, Murakami draws the reader into his world and makes them want to stay, despite the darkness he is so adept at portraying, and this truthful yet romantic storytelling has earned him millions of devoted fans around the world. In his deeply personal new introduction to this edition, Murakami revisits the emotionally charged experience of creating 15-year-old Kafka’s journey from confused runaway to enlightened sage.\nHis vision of loneliness and philosophical awakening has been beautifully interpreted by award-winning Colombian artist Daniel Liévano, whose stunning illustrations, motifs and binding design make this an artist’s book and one of Folio’s finest editions to date.",
+        "details": "Bound in blocked cloth.\nSet in Arno with Futura as display.\n528 pages.\nFrontispiece plus 6 colour illustrations including 3 double-page spreads, each with red motifs on reverse.\nPrinted throughout in black and blue, including 41 illustrated motifs.\nMetallic printed endpapers.\nBlocked and die-cut slipcase 10inch x 6¾inch",
+        "illustrations": "Illustrated by Daniel Liévano.",
+        "price": 75,
+        "category": 1,
+        "rating": 5,
+        "image_url": "",
+        "image": "kaf_book.png"
+      }
     },
     {
-        "pk": 11,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340161",
-            "name": "The Sheep Look Up.",
-            "aurthor": "BRUNNER, John.",
-            "publisher": "New York: Harper & Row, Publishers, 1972",
-            "notes": "First edition, first printing, signed by Brunner on the title page. This classic novel of apocalyptic climate fiction was the author's follow up to The Stand on Zanzibar, an award winning novel tackling human overpopulation.",
-            "description": "Octavo. Original black cloth backed boards, green paper to sides, titles to spine silver. With dust jacket.",
-            "illustrations": "None.",
-            "condition": "An excellent copy, the jacket only lightly creased at edges in some places.",
-            "price": 600.00,
-            "category": 1,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "141001.jpg"
-        }
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340161",
+        "name": "Misery.",
+        "aurthor": "Stephen King.",
+        "overview": "A taut, gripping thriller, Misery is arguably Stephen King’s greatest novel. Award-winning illustrator Edward Kinsella's deeply haunting artwork and striking binding design make this the ultimate collector's edition.",
+        "noteone": "Two weeks after a near-fatal car crash, author Paul Sheldon regains consciousness in a stranger’s guest room, his legs shattered and useless.\nAs the intense pain ebbs and flows, rare moments of lucidity lead to the chilling realisation that his rescuer is also his jailer. Annie Wilkes might be Paul’s ‘number one fan’, but she is incensed that he has killed the heroine Misery Chastain in his latest novel. Fate has given Annie a chance to bring her favourite character back to life, and Paul won’t be leaving Annie’s remote farmstead alive until he complies. Misery sees Stephen King at the height of his writing powers in a novel that explores the psyche of an author suffering extreme torment.\nEdward Kinsella illustrated the best-selling Folio edition of The Shining and he again immerses himself in King’s narrative to create a terrifying and compelling set of illustrations, as well as a binding design that defines the novel: the antique Royal typewriter that is both Paul Sheldon’s entrapment and his only hope of liberty.",
+        "details": "Bound in blocked metallic cloth.\nSet in Maxime with Typeka.\n360 pages.\nBlack & white illustrated title-page spread and 8 colour illustrations.\nPrinted endpapers\nPlain slipcase 10inch x 6¾inch",
+        "illustrations": "Illustrated by Daniel Liévano.",
+        "price": 49.95,
+        "category": 1,
+        "rating": 5,
+        "image_url": "",
+        "image": "mry_bookshot.png"
+      }
     },
     {
-        "pk":12,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340162",
-            "name": "The King in Yellow.",
-            "aurthor": "CHAMBERS, Robert W.",
-            "publisher": "Chicago & New York: F. Tennyson Neely, 1895",
-            "notes": "First edition of this collection of short stories, the second book from American author Robert W. Chambers (1865-1933). Bleiler called The King in Yellow 'a mind destroying book' (Bleiler) and 'one of the most important works of supernatural horror between Edgar Allan Poe and modern horror fiction' (Bleiler, Supernatural Fiction Writers, p. 739).",
-            "description": "Octavo. Original green cloth, titles to spine and front board brown, lizard design to front board brown, top edge gilt, others untrimmed.",
-            "illustrations": "One leaf of publisher's advertisements at the rear.",
-            "condition": "Bookplate of Richard M. Moore to front pastedown. Spine somewhat darkened, some mild dust-soiling and a few minor marks to cloth, light rubbing to extremities, superficial cracking to endpapers inside front hinge but nonetheless sound.",
-            "price": 1750.00,
-            "category": 4,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "139919.jpg"
-        }
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340162",
+        "name": "Castle in the Air.",
+        "aurthor": "Diana Wynne Jones.",
+        "overview": "Abdullah dreams of adventure, but dreams can be big trouble in Castle in the Air, Diana Wynne Jones’s delightful sequel to Howl’s Moving Castle. This Folio edition is illustrated by Marie-Alice Harel.",
+        "noteone": "Diana Wynne Jones’s sequel to the much-loved Howl’s Moving Castle explores more of her gorgeously imaginative world, taking the story to a distant land infused with the flavours of The Arabian Nights.\nCastle in the Air tells the sort of fairy tale only Jones could – warm, clever and enriched with humour, like gold silk in a magical carpet. Marie-Alice Harel, winner of the ninth Book Illustration Competition, returns with more of her exquisite artwork, including six gorgeous full colour images, black-and-white chapter head illustrations, and a wraparound binding design that floats the impossible castle of the title across a night’s sky of silvery stars.\nThis beautiful edition of Castle in the Air also features delicately glittering endpapers depicting the gardens of Abdullah’s dreams, and a splendid decorated slipcase.",
+        "details": "Bound in printed and blocked Elephant Hide paper.\nSet in Agfa Wile.\n256 pages.\n6 colour illustrations, 10 black & white chapter openings and a title-page spread.\nPrinted endpapers\nPlain slipcase 9inch x 6¼inch",
+        "illustrations": "Illustrated by Marie-Alice Harel.",
+        "price": 39.95,
+        "category": 1,
+        "rating": 5,
+        "image_url": "",
+        "image": "cia_bookshot.png"
+      }
     },
     {
-        "pk": 13,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340163",
-            "name": "The Shunned House.With a preface by Frank Belknap Long, Jr.",
-            "aurthor": "LOVECRAFT, H. P.",
-            "publisher": "Athol, Mass. : W. Paul Cook, The Recluse Press, 1928",
-            "notes": "First edition, first printing, of Lovecraft's first book, one of 100 bound in black cloth and distributed by Arkham House in 1961, from an edition limited to 300 copies only. 'One of a handful of copies' (Currey) complete with the uncancelled original 1928 Cook copyright statement, the Arkham House copyright label pasted to the verso of the title, and the 'Canterbury' watermark.",
-            "description": "Octavo. Black cloth, titles in gilt to spine. Housed in an early and attractively matching slipcase.",
-            "illustrations": "None.",
-            "condition": "Light rubbing to corners, two small marks to front board, gilt lettering to spine partly erased, faint uniform toning to contents, as often, a small crease to bottom of p. 7; a near-fine copy.",
-            "price": 6750.00,
-            "category": 2,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "136540.jpg"
-        }
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340163",
+        "name": "Crooked House.",
+        "aurthor": "Agatha Christie.",
+        "overview": "The newest addition to the Folio crime library is Crooked House, the book that Agatha Christie herself believed was one of her best. This edition features evocative illustrations by Sally Dunne.",
+        "noteone": "A mysterious poisoning. A house full of eccentric characters. And one amateur sleuth racing to fit all of the crooked pieces together.\nCrooked House is the epitome of an Agatha Christie novel – in fact, Christie herself described it as one of her own ‘special favourites’. Acknowledged the world over as the undisputed queen of crime, Christie composed the plot of Crooked House with all her usual brilliance, teasing the reader with multiple red herrings and canny psychological insights before leading them to a resolution that still has the power to shock, even today.\nThis edition features seven evocative colour illustrations by artist Sally Dunne that perfectly capture the 1940s period and country-house setting, as well as a binding design that, like Christie’s writing, is both beautiful and sinister.",
+        "details": "Three-quarter bound in blocked cloth, with a printed and blocked Modigliani paper front board.\nSet in Bell with Kabel as display.\n216 pages.\nFrontispiece plus 6 colour illustrations.\nPlain slipcase 9inch x 5¾inch",
+        "illustrations": "Illustrated by Sally Dunne.",
+        "price": 39.95,
+        "category": 1,
+        "rating": 5,
+        "image_url": "",
+        "image": "ckh_bookshot.png"
+      }
     },
     {
-        "pk": 14,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340164",
-            "name": "['Dagon', in] The Vagrant.Number Eleven.",
-            "aurthor": "LOVECRAFT, H. P.",
-            "publisher": "[Athol, MA]: W. Paul Cook, November 1919",
-            "notes": "First appearance in print of Dagon, the first of Lovecraft's tales to introduce a Cthulhu Mythos element by way of the sea deity Dagon. The Vagrant was an amateur press magazine specialising in the supernatural produced by William Paul Cook between 1915 and 1927, with a total of 15 issues.",
-            "description": "Octavo. Original brown paper wrappers, staple bound, titles in black to front cover. Housed in a custom card chemise and red morocco-backed solander box.",
-            "illustrations": "None.",
-            "condition": "Short closed tear to head of spine, contents toned and slightly brittle; else a near-fine, remarkably bright copy of this fragile publication.",
-            "price": 7500.00,
-            "category": 2,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "131926.jpg"
-        }
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340164",
+        "name": "Sharpe’s Triumph.",
+        "aurthor": "Bernard Cornwell.",
+        "overview": "Folio’s illustrated Sharpe series continues with Sharpe’s Triumph. Douglas Smith provides rousing scratchboard images for the first illustrated editions of Bernard Cornwell’s enormously popular historical adventures.",
+        "noteone": "Historical fiction’s favourite soldier returns in the second of Sharpe’s early adventures in India. Bernard Cornwell brings all his considerable descriptive skill to bear on the infamous Battle of Assaye, described by General Arthur Wellesley himself as the battle of which he was most proud.\nThis first ever illustrated edition of Sharpe’s Triumph, produced in series with Sharpe’s Tiger, features a map of India at the time and a battle plan of the fateful conflict, as well as action-packed illustrations by series artist Douglas Smith. The binding design, resplendent in black and gold foils, features one of the enemies’ spectacular war elephants, while the historical note by Cornwell discusses how Sharpe’s Triumph contains a ‘crucial moment’ in Richard Sharpe’s lively career.\nThis special series has been published chronologically from Sharpe’s perspective, allowing us to follow his progress as a soldier, rather than in the order in which the books were originally released.",
+        "details": "Bound in blocked cloth.\nSet in Janson with Gainsborough Serif as display.\n376 pages.\nColour frontispiece plus 3 integrated black & white scratchboard illustrations, plus a map and a battle plan.\nBlocked slipcase 9inch x 5¾inch",
+        "illustrations": "Illustrated by Sally Dunne.",
+        "price": 39.95,
+        "category": 1,
+        "rating": 5,
+        "image_url": "",
+        "image": "sp2_bookshotnew.png"
+      }
     },
     {
-        "pk": 15,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340165",
-            "name": "Tales From Ovid.Twenty-four Passages from the Metamorphoses.",
-            "aurthor": "HUGHES, Ted.",
-            "publisher": "London: Faber and Faber, 1998",
-            "notes": "First edition, signed limited issue, signed by the author; this is the binder's copy, marked '0/5'. The signed limited edition consisted of 310 copies, of which 10 were reserved for the author. This work was the winner of the 1997 Whitbread Book of the Year award.",
-            "description": "Octavo. Original grey cloth-backed green boards, orange label to spine printed in black, orange endpapers. Housed in the original slipcase.",
-            "illustrations": "None.",
-            "condition": "Boards a touch rubbed, else a fine copy, bright and square, in the original slipcase.",
-            "price": 750.00,
-            "category": 4,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "138031.jpg"
-        }
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340165",
+        "name": "The Phantom of the Opera.",
+        "aurthor": "Gaston Leroux.",
+        "overview": "The vaults of the Paris Opéra hide a hideous secret, and it’s revealed with theatrical flourish in this lavish new Folio edition.",
+        "noteone": "Mysterious goings-on at the Paris opera house are brushed aside by its new owners, but the old-timers know that the resident ghost is more than an urban legend. One of the greatest gothic horror novels ever written, Gaston Leroux’s atmospheric adventure still chills first-time readers, then lures them back time and time again. Long eclipsed by the huge popularity of its musical adaptation, the book once again takes centre stage in this lavish new edition that drips with macabre imagery and theatrical allusion.",
+        "details": "This edition uses the 2012 Oxford World’s Classics translation by David Coward.\nBound in screen-printed cloth.\nSet in Poliphilus with Amarante as display.\n360 pages.\n7 colour illustrations, including 2 double-page spreads, and 27 black & white chapter openings.\nPrinted endpapers.\nPrinted page edges.\nPlain slipcase 10inch x 6¾inch",
+        "illustrations": "Illustrated by Taylor Dolan.",
+        "price": 49.95,
+        "category": 2,
+        "rating": 5,
+        "image_url": "",
+        "image": "pht_book.png"
+      }
     },
     {
-        "pk": 16,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340166",
-            "name": "The Day of the Triffids.",
-            "aurthor": "WYNDHAM, John.",
-            "publisher": "London: Michael Joseph, 1951",
-            "notes": "First edition, first impression, of Wyndham's science fiction classic.",
-            "description": "Octavo. Original green cloth, titles to spine in silver. With the illustrated dust jacket. Housed in a green cloth solander box.",
-            "illustrations": "None.",
-            "condition": "Spine ends and edges of boards slightly rubbed, very light circular stain to rear board. Otherwise an excellent copy in a slightly rubbed dust jacket with a few nicks and a small tape repair to verso of head of spine.",
-            "price": 2500.00,
-            "category": 2,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "90298.jpg"
-        }
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340166",
+        "name": "Rebecca.",
+        "aurthor": "Daphne du Maurier.",
+        "overview": "The vaults of the Paris Opéra hide a hideous secret, and it’s revealed with theatrical flourish in this lavish new Folio edition.",
+        "noteone": "Mysterious goings-on at the Paris opera house are brushed aside by its new owners, but the old-timers know that the resident ghost is more than an urban legend. One of the greatest gothic horror novels ever written, Gaston Leroux’s atmospheric adventure still chills first-time readers, then lures them back time and time again. Long eclipsed by the huge popularity of its musical adaptation, the book once again takes centre stage in this lavish new edition that drips with macabre imagery and theatrical allusion.",
+        "details": "Bound in blocked cloth.\nSet in Jenson.\n432 pages.\nBlack and white title-page spread illustration; 6 colour illustrations, and 6 black & white integrated illustrations.\nBlocked slipcase 9½inch x 6¼inch",
+        "illustrations": "Illustrated by D. G. Smith.",
+        "price": 39.95,
+        "category": 2,
+        "rating": 5,
+        "image_url": "",
+        "image": "bec_book.png"
+      }
     },
     {
-        "pk": 17,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340167",
-            "name": "The Earthomotor and Other Stories.",
-            "aurthor": "LINTON, Charles Ellsworth.",
-            "publisher": "Salem, OR : Statesman Publishing Co., 1920",
-            "notes": "First edition, first printing, inscribed in pencil by the author on the front free endpaper, 'To the Nat Hosp. Assoc. with best wishes of the author Dr. C. E. Linton'. ",
-            "description": "Octavo. Original grey cloth, title to spine in black, titles and illustration to front board in black. With dust jacket.",
-            "illustrations": "Photographic frontispiece portrait of Linton and 7 illustrations in the text, 6 of which are full-page.",
-            "condition": "A couple of small marks to spine joints, minor rubbing to spine ends, tiny spot of foxing to spine, else cloth notably bright, contents fresh, a very good copy indeed in the jacket with a little soiling, slight nicks to spine ends and tips, trace of tape repair to verso, sometime removed.",
-            "price": 375.00,
-            "category": 3,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "139395.jpg"
-        }
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340167",
+        "name": "Something Wicked This Way Comes.",
+        "aurthor": "Ray Bradbury.",
+        "overview": "Comedian, writer and broadcaster Frank Skinner introduces the new Folio edition of Ray Bradbury’s dark fantasy masterpiece Something Wicked This Way Comes, with thrilling illustrations by artist Tim McDonagh.",
+        "noteone": "Described by Bradbury himself as the book he loved ‘best of all the things I have written’, Something Wicked This Way Comes is a timeless classic of fantasy horror. For this lavishly illustrated collector’s edition, Tim McDonagh has provided seven colour illustrations dripping with carnivalesque menace.\nThe eerie inhabitants of Cooger & Dark’s Pandemonium Shadow Show are lit with the gaudy yellow and red lights of the funfair, while Mr Dark leers from the midst of his attractions, the faces of his victims tattooed across his palms. Like Bradbury’s prose, the images in this special Folio edition invite the reader to venture a little deeper into that dark tent, promising wonders and horrors and everything in between.\nComedian and actor Frank Skinner lists the book as amongst his favourites, and in his incisive and affectionate introduction written for this edition he examines the many delicious flavours of fear in a novel layered with meaning and portents.",
+        "details": "Bound in blocked cloth.\nTypeset in Columbus.\n272 pages.\nFrontispiece and 6 colour illustrations, including a double-page spread.\nBlocked slipcase 9½inch x 6¼inch",
+        "illustrations": "Illustrated by Tim McDonagh.",
+        "price": 39.95,
+        "category": 2,
+        "rating": 5,
+        "image_url": "",
+        "image": "swk.png"
+      }
     },
     {
-        "pk": 18,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340168",
-            "name": "A Wrinkle in Time, A Wind in the Door, A Swiftly Tilting Planet, Many Waters, An Acceptable Time.",
-            "aurthor": "L'ENGLE, Madeleine.",
-            "publisher": "Ariel Books, Farrar, Straus and Cudahy,/Farrar, Straus & Giroux, 1962, 1973, 1978, 1986, 1989",
-            "notes": "First editions, first impression, inscribed and signed set, of the complete Time Quintet. A Wrinkle in Time, with a signed slip laid in, in the second state jacket (Newbery Prize sticker residue to front panel), together with signed or inscribed first impressions of the four sequential Time Quintet titles (an assembled set, with inscriptions to different recipients).",
-            "description": "Five works, octavo. Original cloth, with dust jackets.",
-            "illustrations": "None.",
-            "condition": "Wrinkle in very good condition, with rubbing to extremities and a faded spine panel, otherwise internally fresh, with the jacket chipped at the ends and corners with two closed tears to bottom of front panel and a few minor marks.",
-            "price": 8750.00,
-            "category": 3,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "111206.jpg"
-        }
+      "pk": 18,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340168",
+        "name": "I Am Legend.",
+        "aurthor": "Richard Matheson.",
+        "overview": "I Am Legend, Richard Matheson’s brutal tale of survival and vampires, arrives in a spectacular Folio edition – illustrated by artist Dave McKean and introduced by a modern master of horror, Joe Hill.",
+        "noteone": "Robert Neville is the last man left alive but his days and nights are far from empty. A plague borne on clouds of dust has killed much of humanity and resurrected them as vampires, and Neville has devoted his daylight hours to exterminating the monsters while at night he barricades himself in his home and listens to the men and women who were once his neighbours howl for his blood. How long can a man’s sanity last in such conditions? The author’s prose is as lean and as efficient as his hero, propelling the reader on a fraught thrill-ride before ultimately asking the terrifying question: who is the real monster here?",
+        "details": "Bound in printed and blocked cloth.\nSet in Aldus.\n208 pages.\nFrontispiece and 6 colour illustrations.\n4 integrated black & white illustrations for the part-titles and illustrated headings throughout.\nDie-cut slipcase 10inch x 5½inch",
+        "illustrations": "Illustrated by Dave McKean.",
+        "price": 49.95,
+        "category": 2,
+        "rating": 5,
+        "image_url": "",
+        "image": "aml_bookshot.png"
+      }
     },
     {
-        "pk": 19,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340169",
-            "name": "Neuromancer.",
-            "aurthor": "GIBSON, William.",
-            "publisher": "London: Victor Gollancz, 1984",
-            "notes": "First UK edition, first printing. Following the publication of the US Ace paperback this is the first hardback edition and first UK edition. Winner of the 'triple crown': the Nebula, Hugo and Philip K Dick Awards, the most famous and enduring 'cyperpunk novel'. A veritable landmark in modern science fiction writing, the cultural impact of which is still widely felt.",
-            "description": "Octavo. Publisher's blue boards, titles in gilt to spine. With dust jacket.",
-            "illustrations": "None.",
-            "condition": "Spine ends a trifle bumped. A fine copy in the near-fine dust jacket, minor creasing to spine head and along top edge of rear panel.",
-            "price": 2000.00,
-            "category": 3,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "135873.jpg"
-        }
-    },
-    {
-        "pk": 20,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340170",
-            "name": "Revolt in 2100.",
-            "aurthor": "HEINLEIN, Robert A.",
-            "publisher": "Chicago: Shasta Publications, 1953",
-            "notes": "First edition, first printing, signed issue. One of an undetermined number of copies issued to subscribers, signed by the author on the blank page tipped-in between the front free endpaper and the half-title. This collection of three short stories, published as part of Heinlein's Future History series, describes the projected future of the human race up to the 23rd century.",
-            "description": "Octavo. Original black cloth-backed red boards, titles to spine in gilt, printed endpapers. With dust jacket.",
-            "illustrations": "None.",
-            "condition": "Partially removed bookseller's ticket to foot of front pastedown. Spine gently rolled, a touch of shelf wear, light foxing to text block edges and endpapers; a very good copy in the jacket with browned spine, slight creasing and nicks to extremities.",
-            "price": 1500.00,
-            "category": 3,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "130166.jpg"
-        }
-    },
-    {
-        "pk": 21,
-        "model": "products.product",
-        "fields": {
-            "sku": "pp5001340171",
-            "name": "Beyond This Horizon.",
-            "aurthor": "HEINLEIN, Robert A.",
-            "publisher": "Reading, PA: Fantasy Press, 1948",
-            "notes": "First edition, first printing. One of 500 numbered and signed copies from a limited edition of 3000 copies. This copy inscribed on the limitation leaf 'For Robert V. Jones All good wishes! Robert A. Heinlein'.",
-            "description": "Octavo. Original red cloth, titles to spine gilt. With dust jacket.",
-            "illustrations": "Frontispiece and 3 plates.",
-            "condition": "Spine faded. An excellent copy in the rubbed and chipped jacket with faded spine panel.",
-            "price": 750.00,
-            "category": 3,
-            "rating": 5.0,
-            "image_url": "",
-            "image": "66688.jpg"
-        }
+      "pk": 19,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5001340169",
+        "name": "Northanger Abbey.",
+        "aurthor": "Jane Austen.",
+        "overview": "The last of Austen’s novels to be published, this is a tongue-in-cheek tale of the hazards of female friendship and undesirable suitors.",
+        "noteone": "Crumbling castles shrouded in secrets, ghostly skeletons cloaked in black veils, and innocent maidens held in the gravest of danger: the clichéd tropes of gothic romance fill the mind of Catherine Morland, the young, naïve, but warm-hearted heroine of Jane Austen’s parody of the popular fiction of her time. Venturing away from her country parsonage home to delight in her first season amongst fashionable society in Bath, Catherine must navigate the more prosaic hazards of female friendship and undesirable suitors to secure the affection of eligible Henry Tilney. But when Catherine is invited to Northanger Abbey, the Tilneys’ ancient stately home, her love of sensational stories of murder and mystery fires her imagination, and threatens to destroy her future happiness.",
+        "details": "Bound in blocked metallic cloth.\nSet in Baskerville with Trajan display.\n232 pages.\nFrontispiece and 5 colour illustrations.\nBlocked slipcase 9½inch x 6¼inch",
+        "illustrations": "Illustrated by Jonathan Burton.",
+        "price": 39.95,
+        "category": 2,
+        "rating": 5,
+        "image_url": "",
+        "image": "nga_book.png"
+      }
     }
-]
+  ]
