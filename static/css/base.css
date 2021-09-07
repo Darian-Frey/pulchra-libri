@@ -38,8 +38,10 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
-    text-transform: uppercase;
+
+
+.title-font {
+    font-family: 'Dancing Script', cursive;
 }
 
 .main-logo-link {
