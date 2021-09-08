@@ -1,3 +1,4 @@
+ {% extends "base.html" %}
 {% load static %}
 {% load bag_tools %}
 
@@ -116,12 +117,21 @@
                             <span>Your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong></span>
                         </p>
                     </div>
-
                 </form>
             </div>
         </div>
     </div>
-    {% endblock %}
+</div>
+
+<!--Loading overlay-->
+<div id="loading-overlay">
+    <h1 class="loading-spinner">
+      <span class="icon">
+        <i class="fas fa-3x fa-sync-alt fa-spin"></i>
+      </span>
+    </h1>
+  </div>
+{% endblock %}
 {% block postloadjs %}
     {{ block.super }}
     {{ stripe_public_key|json_script:"id_stripe_public_key" }}
