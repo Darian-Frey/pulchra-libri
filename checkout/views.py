@@ -9,7 +9,7 @@ from products.models import Product
 #from profiles.models import UserProfile
 #from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
-#import stripe
+import stripe
 import json
 
 @require_POST
