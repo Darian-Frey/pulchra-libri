@@ -41,7 +41,7 @@ def all_products(request):
                 messages.error(request, "You didn't enter anything!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(aurthor__icontains=query)
+            queries = Q(name__icontains=query) | Q(overview__icontains=query) | Q(aurthor__icontains=query) | Q(noteone__icontains=query) | Q(details__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
