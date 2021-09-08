@@ -87,14 +87,30 @@
       </div>
   </nav>
   <div id="delivery-banner" class="row bg-danger text-center">
-    <div class="col fw-bold ">
-      <h4 class="logo-font my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>
-    </div>
+      <div class="col fw-bold">
+          <marquee behavior="scroll" direction="left">
+              <h3 id="scrolling-message-1" class="logo-font my-1 d-inline-block">Free delivery on orders over £{{ free_delivery_threshold }}!</h3>
+          </marquee>
+      </div>            
   </div>
   </header>
 
   {% if messages %}
-  <div class="message-container"></div>
+  <div class="message-container">
+    {% for message in messages %}
+      {% with message.level as level %}
+        {% if level == 40 %}
+          {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+          {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+          {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+          {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+      {% endwith %}
+    {% endfor %}
+  </div>
   {% endif %}
 
   {% block page_header %}
@@ -104,6 +120,9 @@
   {% endblock %}
 
   {% block postloadjs %}
+    <script type="text/javascript">
+      $('.toast').toast('show');
+    </script>
   {% endblock %}
 
   <footer class="container-fluid">
