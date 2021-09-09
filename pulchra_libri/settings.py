@@ -45,8 +45,9 @@ INSTALLED_APPS = [
     #'profiles',
 
     # Others
-    'crispy_forms',
     'storages',
+    "crispy_forms",
+    "crispy_bootstrap5",
 ]
 
 MIDDLEWARE = [
@@ -61,7 +62,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'pulchra_libri.urls'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 TEMPLATES = [
     {
@@ -166,5 +169,22 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+# Stripe
 FREE_DELIVERY_THRESHOLD = 250
 STANDARD_DELIVERY_PERCENTAGE = 10
+STRIPE_CURRENCY = 'gbp'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51JHWpjE7n42WzYlCfrQQMES9nNpTZoOKmMha2ZkN1aYHGlgLB0eKOv0smTdWmUCI6QraWxoZeEGeWFLHGfRh5tY000HKnwp0b0')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51JHWpjE7n42WzYlC1HVlkLgwJXRbd6S18vUvwWRdKJlKGZ93BDMAUhVtCfa9pZBYEILJtt1NILGYohOYrGmynYg600ksUaF5SD')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+
+if 'DEVELOPMENT' in os.environ:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    DEFAULT_FROM_EMAIL = 'pulchra-libri@store.co.uk'
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_USE_TLS = True
+    EMAIL_PORT = 587
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
