@@ -6,13 +6,13 @@
 <head>
 
   {% block meta %}
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
 
   {% endblock %}
@@ -21,9 +21,10 @@
   {% endblock %}
 
   {% block corecss %}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
   {% endblock %}
 
   {% block extra_css %}
@@ -31,16 +32,22 @@
 
   {% block corejs %}
   <script src="https://kit.fontawesome.com/807aa8c83d.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+  </script>
   <!--Stripe-->
   <script src="https://js.stripe.com/v3/"></script>
   {% endblock %}
 
 
   {% block extra_js %}
-  <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   {% endblock %}
 
   <title>Pulchra Libri {% block extra_title %}{% endblock %}</title>
@@ -50,73 +57,74 @@
   <header class="container-fluid">
     <nav class="navbar navbar-dark bg-cust navbar-expand-lg row">
       <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'home' %}"><i class="fas fa-book"></i> <span class="fw-bold">Pulchra</span> Libri</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="{% url 'products' %}">Books</a>
-                </li>
-                  <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="{% url 'profile' %}">My Profile</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="{% url 'view_bag' %}">Bag | {% if grand_total %}
-                          £{{ grand_total|floatformat:2 }}
-                        {% else %}
-                          £0.00
-                        {% endif %}</a>
-                  </li>
-                  {% if request.user.is_authenticated %}
-                    {% if request.user.is_superuser %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Manage Products</a>
-                    </li>
-                    {% endif %}
-                  
-                    <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">Log Out</a></li>
-                  {% else %}
-                  <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}">Login</a></li>
-                  <li class="nav-item"><a class="nav-link" href="{% url 'account_signup' %}">Register</a></li>
-              </ul>
-              {% endif %}
-              <form class="d-flex" method="GET" action="{% url 'products' %}">
-                  <input class="form-control me-2" type="search" name="q" placeholder="Search"
-                      aria-label="Search">
-                  <button class="btn rounded-0 btn-outline-light" type="submit">Search</button>
-              </form>
-          </div>
+        <a class="navbar-brand" href="{% url 'home' %}"><i class="fas fa-book"></i> <span class="fw-bold">Pulchra</span>
+          Libri</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="{% url 'products' %}">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="{% url 'profile' %}">My Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'view_bag' %}">Bag | {% if grand_total %}
+                £{{ grand_total|floatformat:2 }}
+                {% else %}
+                £0.00
+                {% endif %}</a>
+            </li>
+            {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+            <li class="nav-item">
+              <a class="nav-link" href="">Manage Products</a>
+            </li>
+            {% endif %}
+
+            <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">Log Out</a></li>
+            {% else %}
+            <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'account_signup' %}">Register</a></li>
+          </ul>
+          {% endif %}
+          <form class="d-flex" method="GET" action="{% url 'products' %}">
+            <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
+            <button class="btn rounded-0 btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-  </nav>
-  <div id="delivery-banner" class="row bg-danger text-center">
+    </nav>
+    <div id="delivery-banner" class="row bg-danger text-center">
       <div class="col fw-bold">
-          <marquee behavior="scroll" direction="left">
-              <h3 id="scrolling-message-1" class="logo-font my-1 d-inline-block">Free delivery on orders over £{{ free_delivery_threshold }}! - New Books Added Weekly</h3>
-          </marquee>
-      </div>            
-  </div>
+        <marquee behavior="scroll" direction="left">
+          <h3 id="scrolling-message-1" class="logo-font my-1 d-inline-block">Free delivery on orders over
+            £{{ free_delivery_threshold }}! - New Books Added Weekly</h3>
+        </marquee>
+      </div>
+    </div>
   </header>
 
   {% if messages %}
   <div class="message-container">
     {% for message in messages %}
-      {% with message.level as level %}
-        {% if level == 40 %}
-          {% include 'includes/toasts/toast_error.html' %}
-        {% elif level == 30 %}
-          {% include 'includes/toasts/toast_warning.html' %}
-        {% elif level == 25 %}
-          {% include 'includes/toasts/toast_success.html' %}
-        {% else %}
-          {% include 'includes/toasts/toast_info.html' %}
-        {% endif %}
-      {% endwith %}
+    {% with message.level as level %}
+    {% if level == 40 %}
+    {% include 'includes/toasts/toast_error.html' %}
+    {% elif level == 30 %}
+    {% include 'includes/toasts/toast_warning.html' %}
+    {% elif level == 25 %}
+    {% include 'includes/toasts/toast_success.html' %}
+    {% else %}
+    {% include 'includes/toasts/toast_info.html' %}
+    {% endif %}
+    {% endwith %}
     {% endfor %}
   </div>
   {% endif %}
@@ -128,34 +136,39 @@
   {% endblock %}
 
   {% block postloadjs %}
-    <script type="text/javascript">
-      $('.toast').toast('show');
-    </script>
+  <script type="text/javascript">
+    $('.toast').toast('show');
+  </script>
   {% endblock %}
 
   <footer class="container-fluid">
-			<div class="row">
-				<div class="col">
-					<ul class="list-inline social-links">
-						<li class="list-inline-item">
-							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-facebook"></i> <span class="sr-only">Facebook</span></a>
-						</li>
-						<li class="list-inline-item">
-							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-twitter"></i> <span class="sr-only">Twitter</span></a>
-						</li>
-						<li class="list-inline-item">
-							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-linkedin"></i> <span class="sr-only">LinkedIn</span></a>
-						</li>
-						<li class="list-inline-item">
-							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-instagram"></i> <span class="sr-only">Instagram</span></a>
-						</li>
-						<li class="list-inline-item">
-							<a href="#" target="_blank"><i aria-hidden="true" class="fa fa-youtube"></i> <span class="sr-only">YouTube</span></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-    
+    <div class="row">
+      <div class="col">
+        <ul class="list-inline social-links">
+          <li class="list-inline-item">
+            <a href="#" target="_blank"><i aria-hidden="true" class="fa fa-facebook"></i> <span
+                class="sr-only">Facebook</span></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" target="_blank"><i aria-hidden="true" class="fa fa-twitter"></i> <span
+                class="sr-only">Twitter</span></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" target="_blank"><i aria-hidden="true" class="fa fa-linkedin"></i> <span
+                class="sr-only">LinkedIn</span></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" target="_blank"><i aria-hidden="true" class="fa fa-instagram"></i> <span
+                class="sr-only">Instagram</span></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" target="_blank"><i aria-hidden="true" class="fa fa-youtube"></i> <span
+                class="sr-only">YouTube</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
   </footer>
 
 </body>
