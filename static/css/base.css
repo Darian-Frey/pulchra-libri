@@ -9,6 +9,11 @@ Product Overlay
 	z-index: -1;
 }
 
+.card-center {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
 
 /*Products Listing*/
 
@@ -19,9 +24,10 @@ html {
 }
 
 body {
-    background: url('/media/background.jpeg') no-repeat center center fixed;
+    /*background: url('/media/background.jpeg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(100vh - 164px);*/
+    background-color: #E0C9A6;
     font-family: 'Lato';
 }
 
@@ -81,6 +87,27 @@ body {
     background: #000 !important;
 }
 
+#dropdownMenuButton1 {
+    width: 250px;
+}
+
+.product-detail-btn {
+    width: 170px;
+}
+
+.button-block {
+    display: block;
+    margin: auto;
+}
+
+.quant-group {
+    width: 25px;
+}
+
+.checkout-card {
+    
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -98,6 +125,10 @@ body {
     height: 2px;
   }
 
+.bottom-padding {
+    /* adds 70px padding lifting content over footer */
+    padding-bottom: 70px;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -117,17 +148,15 @@ body {
         z-index: 1030;
     }
 
-    .header-container {
-        padding-top: 164px;
-    }
+
 }
 
 /*Footer*/
 
 footer {
-    padding-top: 100px;
-    padding-bottom: 20px;
     text-align: center;
+    background-color: #112229;
+    position: relative;
   }
 
 
