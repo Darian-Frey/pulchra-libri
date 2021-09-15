@@ -64,7 +64,7 @@
                                     </button>
                                 </div>
                                 <input class="form-control qty_input quant-group" type="number"
-                                    name="quantity" value="1" min="1" max="99"
+                                    name="quantity" value="1" min="1" max="10"
                                     data-item_id="{{ product.id }}"
                                     id="id_qty_{{ product.id }}">
                                 <div class="input-group-append">
@@ -90,9 +90,7 @@
         </div>
     </div>
 </div>
-{% endblock %}
-
-{% block postloadjs %}
-{{ block.super }}
-{% include 'products/includes/quantity_input_script.html' %}
+{% block postloadjs %} 
+{{ block.super }} 
+{% include 'products/includes/quantity_input_script.html' %} 
 {% endblock %}
