@@ -115,15 +115,15 @@ body {
     top: 72px;
     right: 15px;
     z-index: 99999999999;
-  }
-  
-  .custom-toast {
+}
+
+.custom-toast {
     overflow: visible;
-  }
-  
-  .toast-capper {
+}
+
+.toast-capper {
     height: 2px;
-  }
+}
 
 .bottom-padding {
     /* adds 70px padding lifting content over footer */
