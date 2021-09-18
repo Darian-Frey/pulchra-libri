@@ -8,11 +8,11 @@
 </div>
 {% endblock %}
 {% block content %}
-<div class="container">
+<div class="container bottom-padding">
     <div class="row">
         <div class="col-12 col-md-6">
             <h2 class="my-4">Product Management</h2>
-            <h5 class="text-muted">Edit Product</h5>
+            <h5 class="">Edit Product</h5>
         </div>
     </div>
     <div class="row">
@@ -21,10 +21,10 @@
                 {% csrf_token %}
                 {{  form | crispy }}
                 <div class="text_right" >
-                    <a href="{% url 'products' %}" class=" my-2 btn btn-dark rounded-0">
+                    <a href="{% url 'products' %}" class=" my-2 btn btn-lg btn-dark">
                         <span class="text-uppercase">Cancel</span>
                     </a>
-                    <button class=" my-2 btn btn-dark rounded-0 text-uppercase" type="submit">Update Product</button>
+                    <button class=" my-2 btn btn-lg btn-dark text-uppercase" type="submit">Update Product</button>
                 </div>
             </form>
             
