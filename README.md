@@ -4,7 +4,7 @@ Pulchra Libri is an E-commerce store whose aim is to bring beautifully crafted b
 Users can purchase books as a guest or register.
 Registered users will be able to access their profile page to view their previous purchases.
 
-
+[Link to my deployed site on Heroku](https://darian-pulchra-libri.herokuapp.com/)
 
 # User Experience (UX)
 
@@ -158,10 +158,56 @@ Languages used for this site:
 
 # Deployment
 
-## Github & Gitpod 
+## Github & Gitpod
 
-## MongoDB
+1. I created a repository for the project on GitHub, using Gitpod I was able to use the green 'Gitpod' button to open the project in a Gitpod workspace and work on the project from here - commits and pushes were actioned using the source control tab in Gitpod
+2. To clone the repository, a user can clone the repo use the 'code' button in the repo. From here the repo can be cloned using HTTPS or GitHub CLI. Alternatively, a user can clone the repo locally by selecting the 'Open with GitHub Desktop' option, this will produce a prompt for GitHub Desktop to open - more information about cloning a repository can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+3. When running locally, all the relevant dependencies will need to be installed using pip, in the IDE's terminal type:
+   > pip3 install -r requirements.txt
+4. Create a Procfile, this will allow Heroku to understand the type of app we are running, the following should be input to the Procfile:
+   > web: gunicorn pulchra_libri.wsgi:application
 
 ## Heroku
+
+
+1. Create a Heroku account or log in if you already have an account
+2. Create a new app in Heroku and select your region or closet region, for me this was Europe, I am based in the UK
+3. Navigate to 'Resources' and provision a Heroku Postgres database, using the free plan here is fine
+4. In GitPod install dj_database_url and psycopg2-binary using the pip3 install command in the terminal
+5. Install requirements using
+  > pip3 freeze > requirements.txt
+6. Import dj_database_url in project level settings.py
+7. Comment out the current DATABASE settings(these will be required later) 
+8. Obtain DATABASE_URL from Heroku Key Vars, type the following into DATABASE settings 
+  > 'default': dj_database_url.parse(*DATABASE URL GOES HERE*)
+9. Run migrations by using
+  > python3 manage.py migrate
+10. If you do not already have a superuser account, you can create one using the following command and following prompts in the terminal
+  > python3 manage.py createsuperuser
+11. In settings.py uncomment the previously commented out DATABASE settings and update this using an if statement - the app will run on Heroku but can 'fall back' on SQL if needed
+12. Install gunicorn using:
+  > pip3 install gunicorn
+13. Again, freeze requirements using:
+  > pip3 freeze > requirements.txt
+14. Create Procfile and input the following to allow Heroku to understand how to run the project:
+  > web: gunicorn pulchra_libri.wsgi:application
+15. Login to Heroki using the terminal by typing and following terminal prompts
+  > heroku login -i
+16. We do not want Heroku to collect static files so must disable this for now using(--app nandi-store is only requirement if you have one than one app):
+  > heroku config:set DISABLE_COLLECTSTATIC=1 --app darian-pulchra-libri
+17. Back in settings.py we need to change ALLOWED_HOSTS to, to allow Heroku app to run but also to allow us to still access it via GitPod:
+  > ALLOWED_HOSTS = ['darian-pulchra-libri.herokuapp.com', 'localhost']
+18. Copy Environment Variables from GitPod into Heroku's Config Vars which can be found in settings
+
+### Deploying in Heroku
+
+1. Using GitPod Heroku needs to be initialised, in the terminal input:
+  > git remote: heroku git:remote -a darian-pulchra-libri
+2. Push to Heroku main using:
+  > git push heroku main
+3. In the Heroku Overview you will be able to see Heroku building the app - the site is now live
+4. Once Heroku has finished the build, we can link our Git repo to Heroku for automatic deployment which means any changes to the repo will automatically be pushed to the Heroku branch and live site will reflect and changes - In the Deploy tab, click 'GitPod' in Deployment methods and search for the relevant repo and connect
+5. Finally, tick the option to allow automatic deploys
+6. The app can be launced using the'Open App' button towards the top of the screen
 
 # Credit
