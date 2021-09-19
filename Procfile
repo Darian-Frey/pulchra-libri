@@ -1,0 +1,1 @@
+web: gunicorn pulchra_libri.wsgi:application
