@@ -104,8 +104,12 @@ body {
     width: 25px;
 }
 
-.checkout-card {
-    
+.checkout-button-group {
+    width: 250px;
+}
+
+.button-margin-top {
+    margin-top: 5px;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -212,7 +216,7 @@ footer {
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
-    color: #a7adad; /* text-info */
+
 }
 
 .allauth-form-inner-content input {
@@ -256,13 +260,5 @@ footer {
 	color: #fff;
     background-color: #222;
     border-color: #222;
-}
-
-.allauth-form-inner-content a {
-	color: #447f91; /* text-info */
-}
-
-.form-check-label {
-    color: #a7adad; /* text-info */
 }
   
