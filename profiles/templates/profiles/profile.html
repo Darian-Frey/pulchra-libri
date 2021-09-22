@@ -20,9 +20,12 @@
       <h4 class="my-3">Default Delivery Information</h4>
       <form class="my-2" action="{% url 'profile' %}" method="POST" id="profile-update-form" >
         {% csrf_token %} {{ form|crispy }}
-        <button class="btn btn-dark text-uppercase mt-2 mb-2">
+        <button class="btn btn-dark text-uppercase button-margin-top">
           Update Information
         </button>
+        <a class="text-white btn btn-dark text-uppercase button-margin-top" href="{% url 'wish_list' %}">
+          <span><i class=""></i>View your wish list</span>
+      </a>
       </form>
     </div>
     <div class="col-12 col-lg-6 bottom-padding">

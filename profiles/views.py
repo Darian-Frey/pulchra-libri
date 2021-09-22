@@ -1,10 +1,48 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import UserProfile
+from .models import UserProfile, WishList 
 from .forms import UserProfileForm
 
 from checkout.models import Order
+
+import time
+
+
+@login_required
+def wish_list(request):
+    """ Display the users Wish List """
+
+    username = request.user.username
+    profile = UserProfile.objects.get(user__username=username)
+    wish_list = WishList.objects.all().filter(user=profile)
+    template = 'profiles/wish_list.html'
+    context = {
+        'wish_list': wish_list,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def remove_wish_list(request, product_id):
+    """ Delete a book from the users wish list """
+
+    username = request.user.username
+    profile = UserProfile.objects.get(user__username=username)
+    wish_list = WishList.objects.all().filter(user=profile)
+    for books in wish_list:
+        if books.product.id == int(product_id):
+            print('true')
+            books.delete()
+
+    wish_list = WishList.objects.all().filter(user=profile)
+    template = 'profiles/wish_list.html'
+    context = {
+        'wish_list': wish_list,
+    }
+
+    return render(request, template, context)
 
 
 @login_required

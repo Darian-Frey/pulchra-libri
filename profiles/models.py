@@ -20,6 +20,12 @@ class UserProfile(models.Model):
         return self.user.username
 
 
+class WishList(models.Model):
+#    user = models.CharField(UserProfile, on_delete=models.CASCADE)
+#    wish_list = models.CharField(Product, on_delete=models.CASCADE)
+    status = models.BooleanField(default=False)
+
+
 @receiver(post_save, sender=User)
 def create_or_update_user_profile(sender, instance, created, **kwargs):
 

@@ -79,13 +79,14 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <a href="{% url 'products' %}" class="btn btn-dark mt-5 product-detail-btn">
+                        <a href="{% url 'products' %}" class="btn btn-dark button-margin-top product-detail-btn">
                             <span class="text-uppercase">Keep Shopping</span>
                         </a>
-                        <input type="submit" id="add-to-bag_{{ product.id }}" class="btn btn-dark text-uppercase mt-5 product-detail-btn" value="Add to Bag">
-                        <a href="{% url 'view_bag' %}" class="btn btn-dark mt-5 product-detail-btn">
+                        <input type="submit" id="add-to-bag_{{ product.id }}" class="btn btn-dark text-uppercase button-margin-top product-detail-btn" value="Add to Bag">
+                        <a href="{% url 'view_bag' %}" class="btn btn-dark button-margin-top product-detail-btn">
                             <span class="text-uppercase">Check Out</span>
                         </a>
+                        <a href="{% url 'wish_list' product.id %}?from_product=True" class="btn btn-dark text-uppercase button-margin-top product-detail-btn">Save to wish list<i class="ml-1 fa fa-plus-circle"></i></a>
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 </div>
