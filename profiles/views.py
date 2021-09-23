@@ -1,18 +1,14 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import UserProfile, WishList 
+from .models import UserProfile, WishList
 from .forms import UserProfileForm
 
 from checkout.models import Order
 
-import time
 
-
-@login_required
 def wish_list(request):
-    """ Display the users Wish List """
-
+    """ Display the users wish list """
     username = request.user.username
     profile = UserProfile.objects.get(user__username=username)
     wish_list = WishList.objects.all().filter(user=profile)

@@ -3,6 +3,8 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
+from products.models import Product, ProductWishList
+
 from django_countries.fields import CountryField
 
 
@@ -21,9 +23,8 @@ class UserProfile(models.Model):
 
 
 class WishList(models.Model):
-#    user = models.CharField(UserProfile, on_delete=models.CASCADE)
-#    wish_list = models.CharField(Product, on_delete=models.CASCADE)
-    status = models.BooleanField(default=False)
+    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE , null=True, blank=True)
+    wish_list = models.ForeignKey(ProductWishList, on_delete=models.CASCADE , null=True, blank=True)
 
 
 @receiver(post_save, sender=User)

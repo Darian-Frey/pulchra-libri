@@ -32,3 +32,13 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class ProductWishList(models.Model):
+    name = models.CharField(max_length=254)
+    aurthor = models.CharField(max_length=254)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    price = models.DecimalField(max_digits=8, decimal_places=2)
+
+    def __str__(self):
+        return self.name

@@ -1,11 +1,11 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 from .forms import ProductForm
-
+from profiles.models import WishList, UserProfile
 
 def all_products(request):
     """Renders all products"""
@@ -139,3 +139,37 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted')
     return redirect(reverse('products'))
+
+
+def wish_list(request, product_id):
+    """
+    Save book to user wish list
+    """
+    if request.user.is_authenticated:
+        username = request.user.username
+        profile = UserProfile.objects.get(user__username=username)
+        all_wish_list = WishList.objects.all().filter(user=profile)
+        if all_wish_list:
+            add_item = True
+            for item in all_wish_list:
+                if product_id == item.product.id:
+                    add_item = False
+
+            if add_item:
+                messages.info(request, 'Book added to your wish list')
+                saved_item = WishList(user=profile, product_id=product_id, status=True)
+                saved_item.save()
+                return HttpResponseRedirect(reverse('product_detail', args=(product_id,)))
+            else:
+                messages.info(request, 'You already have this book saved to your wish list')
+                return HttpResponseRedirect(reverse('product_detail', args=(product_id,)))
+
+        else:
+            print("No books in wish list, first book added")
+            messages.info(request, 'Congratulations, you saved your first book to your wish list')
+            saved_item = WishList(user=profile, product_id=product_id, status=True)
+            saved_item.save()
+            return HttpResponseRedirect(reverse('product_detail', args=(product_id,)))
+    else:
+        print("User not logged in")
+        return HttpResponseRedirect(reverse('product_detail', args=(product_id,)))

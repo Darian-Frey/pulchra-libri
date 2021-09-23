@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'profiles/css/profiles.css' %}">
+    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -19,9 +19,9 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col"> 
-                <h2 class="logo-font mt-5 mb-4 text-white text-center text-md-left">Wish List</h2>
-                <a class="text-white" href="{% url 'profile' %}">
-                    <span><i class="fas fa-chevron-left text-white"></i> BACK TO PROFILE</span>
+                <h2 class="logo-font mt-5 mb-4 text-center text-md-left">Wish List</h2>
+                <a class="btn btn-dark text-uppercase mt-2 mb-2 product-detail-btn" href="{% url 'profile' %}">
+                    <span> BACK TO PROFILE</span>
                 </a>
                 <hr>
             </div>
