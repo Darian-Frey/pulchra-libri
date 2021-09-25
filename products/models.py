@@ -1,4 +1,5 @@
 from django.db import models
+from smartfields import fields
 
 
 class Category(models.Model):

@@ -141,6 +141,7 @@ def delete_product(request, product_id):
     return redirect(reverse('products'))
 
 
+@login_required
 def wish_list(request, product_id):
     """
     Save book to user wish list

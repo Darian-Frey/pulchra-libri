@@ -7,6 +7,7 @@ from .forms import UserProfileForm
 from checkout.models import Order
 
 
+@login_required
 def wish_list(request):
     """ Display the users wish list """
     username = request.user.username
