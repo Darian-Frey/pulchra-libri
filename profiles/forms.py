@@ -10,6 +10,8 @@ class UserProfileForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         placeholders = {
+            'default_first_name': 'First Name',
+            'default_second_name': 'Second Name',
             'default_email': 'Email Address',
             'default_phone_number': 'Phone Number',
             'default_postcode': 'Postal Code',

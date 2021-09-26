@@ -3,13 +3,15 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
-from products.models import Product, ProductWishList
+from products.models import Product
 
 from django_countries.fields import CountryField
 
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+    default_first_name = models.CharField(max_length=20, null=True, blank=True)
+    default_second_name = models.CharField(max_length=20, null=True, blank=True)
     default_phone_number = models.CharField(max_length=20, null=True, blank=True)
     default_street_address1 = models.CharField(max_length=80, null=True, blank=True)
     default_street_address2 = models.CharField(max_length=80, null=True, blank=True)
@@ -20,11 +22,6 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return self.user.username
-
-
-class WishList(models.Model):
-    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE , null=True, blank=True)
-    wish_list = models.ForeignKey(ProductWishList, on_delete=models.CASCADE , null=True, blank=True)
 
 
 @receiver(post_save, sender=User)
