@@ -76,13 +76,25 @@
                                 {% if product.category %}
                                     <a class="card-text link-secondary" href="{% url 'products' %}?category={{ product.category.name }}">
                                     <i class="fas fa-tags"></i>{{ product.category.friendly_name }}</a>
-                                {% endif %}
+                                <!--{% endif %}
                                 <p class="card-text">£{{ product.price }}</p>
                                 {% if product.rating != 0 %}
                                 <p class="card-text"><i class="fas fa-star"></i> {{product.rating}}/5</p>
                                 {% else %}
                                 <p class="card-text">No ratings yet</p>
-                                {% endif %}
+                                {% endif %}-->
+
+                                <form action="{% url 'products' %}?like_product=product_id" method="POST">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="like_id" value="{{ product.id }}">
+                                    {% if user not in product.liked.all %}
+                                        <button class="btn btn-success text-uppercase button-margin-top product-detail-btn" type="submit">Like</button>
+                                    {% else %}
+                                        <button class="btn btn-danger text-uppercase button-margin-top product-detail-btn" type="submit">Unlike</button>
+                                    {% endif %}
+                                </form>
+                                <strong>{{ product.num_likes }} Likes</strong>
+
                                 <div>
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3">

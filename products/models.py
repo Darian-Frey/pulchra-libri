@@ -1,5 +1,6 @@
 from django.db import models
 from smartfields import fields
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -31,8 +32,29 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
+    # User likes
+    liked = models.ManyToManyField(User, related_name='likes', default=None, blank=True)
+    updated = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True)
+    user_liked = models.ForeignKey(User, related_name='users_likes', on_delete=models.CASCADE)
+
     def __str__(self):
         return self.name
 
+    def num_likes(self):
+        return self.liked.all().count()
 
 
+LIKE_CHOICE = (
+    ('Like', 'Like'),
+    ('Unlike', 'Unlike'),
+)
+
+
+class Like(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    value = models.CharField(choices=LIKE_CHOICE, default='Like', max_length=10)
+
+    def __str__(self):
+        return str(self.product)

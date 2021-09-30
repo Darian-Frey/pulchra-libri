@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, Like
 from .forms import ProductForm
 from profiles.models import UserProfile
 
@@ -11,6 +11,7 @@ def all_products(request):
     """Renders all products"""
 
     products = Product.objects.all()
+    user = request.user
     query = None
     categories = None
     sort = None
@@ -52,6 +53,7 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'user': user,
     }
 
     return render(request, 'products/products.html', context)
@@ -139,3 +141,26 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted')
     return redirect(reverse('products'))
+
+
+def like_product(request, product_id):
+    user = request.user
+    if request.method == 'POST':
+        product_id = request.POST.get('product_id')
+        product_obj = Product.objects.get(id=product_id)
+
+        if user in product_obj.liked.all():
+            product_obj.liked.remove(user)
+        else:
+            product_obj.liked.add(user)
+
+        like, created = Like.objects.get_or_create(user=user, product_id=product_id)
+
+        if not created:
+            if like.value == 'like':
+                like.value = 'Unlike'
+            else:
+                like.value = 'Like'
+
+        like.save()
+    return redirect(reverse('products/products.html'))
